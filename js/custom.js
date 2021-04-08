@@ -12,9 +12,14 @@ $(".nav-item").click(function () {
 
 var winH = $(window).height(),
     linkBarH = $(".link-bar").innerHeight(),
-    navBarH = $(".navbar").innerHeight();
+    navBarH = $(".navbar").innerHeight(),
+    myHeader = $(".carousel .carousel-inner");
 
-$(".carousel .carousel-inner").height(winH - (linkBarH + navBarH));
+myHeader.height(winH - (linkBarH + navBarH));
+$(window).resize(function () {
+  myHeader.height($(window).height()),
+  $(".header .carousel .carousel-inner img").height($(window).height());
+});
 
 // trigger viewMore button
 

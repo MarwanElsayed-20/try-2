@@ -322,6 +322,10 @@
    .carousel .carousel-control-next {
     display: none;
   }
+  .testimonial .carousel .carousel-inner .carousel-item {
+    margin-top: 5vh
+  }
+
 }
 
 /* end testimonials */
@@ -674,7 +678,5 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1
 }
-
-
 
 /* end my frameWork */
